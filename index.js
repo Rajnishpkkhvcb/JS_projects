@@ -4,6 +4,12 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+
+
+
+
+
+
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -50,6 +56,16 @@ function quantityChanged(event) {
 }
 
 function addToCartClicked(event) {
+    alert("clicked")
+
+
+
+
+
+
+
+
+
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
